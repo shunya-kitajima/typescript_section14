@@ -10,9 +10,10 @@ import TodoList from './components/TodoList';
 // }
 
 const App: React.FC = () => {
+  const todos = [{id: 't1', text: 'TypeScriptコースの完了'}];
   return (
     <div className="App">
-      <TodoList />
+      <TodoList items={todos} />
     </div>
   );
 }
